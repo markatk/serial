@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 2.8.3)
-project(serial)
+cmake_minimum_required(VERSION 3.0.2)
+project(serial VERSION 1.2.1)
 
 # Options
 option(BUILD_EXAMPLES "Build serial example" ON)
