@@ -32,3 +32,10 @@ doc/html
 ipch
 Debug
 Release
+
+.vscode/
+.vs/
+.idea/
+
+cmake-build-debug/
+cmake-build-release/

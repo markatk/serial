@@ -82,4 +82,11 @@ Changelog for package serial
 
 1.1.0 (2012-10-24)
 ------------------
-* Previous history is unstructured and therefore has been truncated. See the commit messages for more info.
+* Converted the build system to catkin
+
+1.0.1 (2012-8-27)
+-----------------
+
+* Added baudrates: 1000000, 11520000, 2000000, 2500000, 3000000, 3500000, and 4000000
+* Linking related bug fixes on Linux and OS X
+* Custom baudrate bug fix.  Closes issue #18.
