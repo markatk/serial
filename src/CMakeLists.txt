@@ -18,11 +18,10 @@ else()
     list(APPEND serial_SRCS impl/list_ports/list_ports_win.cc)
 endif()
 
-## Include headers
-include_directories(../include)
-
 ## Add serial library
 add_library(${PROJECT_NAME} ${serial_SRCS})
+
+target_include_directories(${PROJECT_NAME} PUBLIC ../include)
 
 if(APPLE)
     target_link_libraries(${PROJECT_NAME} ${FOUNDATION_LIBRARY} ${IOKIT_LIBRARY})

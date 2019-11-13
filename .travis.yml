@@ -1,10 +1,9 @@
 os:
   - linux
   - osx
+  - windows
 language: cpp
-install:
-  - make install_deps
-  - source setup.bash
 script:
-  - mkdir build && cd build && cmake .. -DPYTHON_EXECUTABLE=$(which python2) && make && make tests && make run_tests
-  - catkin_test_results .
+  - mkdir build && cd build
+  - cmake ..
+  - cmake --build .
